@@ -1,0 +1,21 @@
+<templateSet group="user">
+  <template name="pre" value="echo &quot;&lt;pre&gt;&quot;;&#10;print_r($var$);&#10;exit;" description="print with pre" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="pnt" value="&lt;pre&gt;&#10;&lt;?php print_r($var$); ?&gt;&#10;&lt;/pre&gt;" description="print with pre" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ddd" value="die(json_encode($arr$));" description="die with dump" toReformat="false" toShortenFQNames="true">
+    <variable name="arr" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
